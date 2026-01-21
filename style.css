@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #c0392b;
+  flex: 1;
+}
+
+.card a {
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-title {
+  padding: 20px;
+}
+
+.post {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #777;
+}
+
+footer {
+  background: #1f1f1f;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+  }
+}
