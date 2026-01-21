@@ -1,0 +1,147 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #222;
+  --header-bg: #111;
+  --card-bg: #ffffff;
+  --accent: #c0392b;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --header-bg: #000;
+  --card-bg: #1e1e1e;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+}
+
+/* BOTÕES DO TOPO */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* MAIN */
+main {
+  padding: 30px 20px;
+}
+
+/* CATEGORIAS */
+.categories {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.categories h1 {
+  margin-bottom: 25px;
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.category-btn {
+  background: var(--card-bg);
+  padding: 25px;
+  text-decoration: none;
+  color: var(--text-color);
+  border-left: 5px solid var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.category-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* PÁGINAS INTERNAS */
+.page-title {
+  margin-bottom: 20px;
+}
+
+.post {
+  background: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent);
+}
+
+.meta {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* CONTACTOS */
+.contact-box {
+  background: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-box strong {
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  background: var(--header-bg);
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-buttons {
+    justify-content: center;
+  }
+}
