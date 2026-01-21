@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+<svg viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <style>
       .title {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        fill: #111;
+        font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 36px;
+        fill: #1e3a8a; /* Azul escuro */
       }
       .subtitle {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        fill: #666;
+        font-size: 14px;
+        fill: #f59e0b; /* Amarelo */
       }
       .icon {
-        fill: #c62828;
+        fill: #ef4444; /* Vermelho vivo */
+      }
+      .icon-accent {
+        fill: #f97316; /* Laranja para detalhes */
       }
     </style>
   </defs>
 
   <!-- Ícone -->
-  <g transform="translate(0,6)">
-    <rect x="0" y="0" width="36" height="36" rx="6" class="icon"/>
-    <path d="M10 26 L26 10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="18" cy="18" r="3" fill="#fff"/>
+  <g transform="translate(0,8)">
+    <rect x="0" y="0" width="48" height="48" rx="10" class="icon"/>
+    <path d="M12 36 L36 12" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="4" fill="#fff"/>
+    <circle cx="18" cy="18" r="3" class="icon-accent"/>
   </g>
 
   <!-- Texto -->
-  <text x="48" y="30" class="title">CatanaInfo</text>
-  <text x="48" y="42" class="subtitle">informação com responsabilidade</text>
+  <text x="60" y="38" class="title">CatanaInfo</text>
+  <text x="60" y="58" class="subtitle">informação com responsabilidade</text>
 </svg>
